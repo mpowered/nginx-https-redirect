@@ -1,2 +1,3 @@
 FROM nginx:1.9
-ADD redirect.conf /etc/nginx/sites-available/redirect
+RUN rm /etc/nginx/sites-enabled/default
+ADD redirect.conf /etc/nginx/sites-enabled/redirect
